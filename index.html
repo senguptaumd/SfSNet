@@ -181,7 +181,7 @@ estimation.
                 <td style="padding:1em"><a href="https://arxiv.org/abs/1712.01261"><img style="height:180px" src="./resources/thumb.png"/></a></td>
                 <td style="padding:1em"><span style="font-size:14pt">Soumyadip Sengupta, Angjoo Kanazawa, Carlos D. Castillo, David W. Jacobs.<br><br>
                     SfSNet : Learning Shape, Reflectance and Illuminance of Faces ‘in the wild’<br><br>
-                    arXiv, Dec 2017.<br> </span>
+			In CVPR 2018 <b>(Spotlight)</b>.<br> </span>
                 </td>
               </tr>
             </table>
@@ -200,7 +200,7 @@ estimation.
             </table>
             <br>  
 	    <hr>
-            <center><h1>Overview</h1></center> 
+            <center><h1>Code</h1></center> 
             <table align=center width=1000px> 
               <tr> 
 		<center> 
@@ -217,8 +217,8 @@ combines normal and lighting to produce shading.</i></span>
 		    
 	      <tr>
 	      <td><center> <br> 
-		  <span style="font-size:22px">&nbsp;<a href='https://github.com/senguptaumd/SfSNet'>
-			 [Code] </a> </span>
+		  <span style="font-size:25px">&nbsp;<a href='https://github.com/senguptaumd/SfSNet'>
+			 [GitHub] </a> </span>
 		  <br> 
 		</center>
 	      </td>
@@ -227,6 +227,72 @@ combines normal and lighting to produce shading.</i></span>
 
 <br>
 <hr>
+
+<a name="applications"></a>
+			<center><h1>Results</h1></center>
+			<!-- Our Differentiable Ray Consistency (DRC) formulation allows us to learn single-view 3D reconstruction using varying kinds of multi-view observations and can be applied to diverse settings.-->
+
+			<br><br>
+			<table align=center width=1100px>
+				<tr>
+					<td width=400px>
+						<center> <span align="top" style="font-size:20px">Comparison with Neural Face</a></span><br><br> </center>
+					</td>
+					<td width=50px> </td>
+					<td width=400px>
+						<center> <span align="top" style="font-size:20px">Comparison with MoFA</a></span><br><br> </center>
+					</td>
+				</tr>
+				<tr height="300px">
+					<td valign="top" width=400px>
+					<center>
+					<a href="./resourcesimages/adobe.png"><img img src = "./resources/adobe.png" height = "200px"></a><br>
+					<span style="font-size:14px">Inverse Rendering. SfSNet vs Neural Face on
+the data showcased by the authors. Note that the normals shown
+by SfSNet and Neural Face have reversed color codes due to
+different choices in the coordinate system.</span><br><br>
+					</center>
+					</td>
+
+					<td width=50px> </td>
+
+					<td  valign="top" width=400px>
+					<center>
+					<a href="./resources/mofa.png"><img img src = "./resources/mofa.png" height = "200px"></a><br>
+					<span style="font-size:14px">Inverse Rendering. SfSNet vs ‘MoFA’ [31] on the
+data provided by the authors of the paper.</span><br><br>
+					</center>
+					</td>
+				</tr>
+
+				<tr>
+				<td width=400px>
+					<center> <span align="top" style="font-size:20px">Driving Sequences as Multi-view Supervision (Cityscapes)</a></span><br><br> </center>
+				</td>
+				<td width=50px> </td>
+				<td width=400px>
+					<center> <span align="top" style="font-size:20px">Multi-view Color Images as Supervision (ShapeNet)</a></span><br><br> </center>
+				</td>
+				</tr>
+
+				<tr height="200px">
+					<td valign="top" width=400px>
+					<center>
+					<a href="./resources/images/csVis.png"><img img src = "./resources/images/csVis.png" height = "140px"></a><br>
+					<span style="font-size:14px">Sample results on Cityscapes dataset using multiple depth and semantic segmentation images seen in  driving sequences as supervision for training. a) Input image. b,c) Predicted 3D shape visualized by rendering inferred depth and semantics under simulated forward motion.</span>
+					</center>
+					</td>
+					<td width=50px> </td>
+					<td  valign="top" width=400px>
+					<center>
+					<a href="./resources/images/sNetColorVis.png"><img img src = "./resources/images/sNetColorVis.png" height = "200px"></a><br>
+					<span style="font-size:14px">Sample results on ShapeNet dataset using multiple RGB images as supervision for training. a) Input image. b,c) Predicted 3D shape.</span>
+					</center>
+					</td>
+				</tr>
+			</table>
+		<br>
+		<hr>
             <table align=center width=1100px>
                 <tr>
                     <td>

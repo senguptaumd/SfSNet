@@ -1,6 +1,7 @@
 clc; clear;
 %% TO DO: Add your Matcaffe path as $PATH_TO_CAFFE/matlab
-addpath(genpath('/scratch2/photometric_stereo/caffe/matlab/'));
+PATH_TO_CAFFE_MATLAB='/scratch2/photometric_stereo/caffe/matlab/';
+addpath(genpath(PATH_TO_CAFFE_MATLAB));
 
 addpath(genpath('functions'));
 
@@ -14,12 +15,16 @@ net = caffe.Net(model, weights, 'test');
 
 
 %% Choose Dataset
-%Images and masks are provided
-list_im=dir('Images_mask/*_face.png'); dat_idx=1;
-
-
-%No mask provided (Need to use your own mask).
-%list_im=dir('Images/*.png'); dat_idx=0; %Uncomment to test with this mode
+dat_idx=input('Please enter 1 for images with masks and 0 for images without mask: ');
+if dat_idx
+    %Images and masks are provided
+    list_im=dir('Images_mask/*_face.png'); dat_idx=1;
+elseif dat_idx==0
+    %No mask provided (Need to use your own mask).
+    list_im=dir('Images/*.png'); dat_idx=0; %Uncomment to test with this mode
+else
+    disp('Wrong Option!');
+end
 
 M=128; %size of input for SfSNet
 for i=1:length(list_im)
@@ -58,7 +63,7 @@ for i=1:length(list_im)
     
     %% Note: n_out2, al_out2, light_out is the actual output
     
-    [Irec,Ishd]=create_shading_recon(n_out2,al_out2,light_out);
+    [Irec,Ishd]=create_shading_recon(n_out2,al_out2,light_out); %creates reconstruction and shading image
     
     
     if dat_idx

@@ -15,11 +15,11 @@ net = caffe.Net(model, weights, 'test');
 
 %% Choose Dataset
 %Images and masks are provided
-%list_im=dir('Images_mask/*_face.png'); dat_idx=1;
+list_im=dir('Images_mask/*_face.png'); dat_idx=1;
 
 
 %No mask provided (Need to use your own mask).
-list_im=dir('Images/*.png'); dat_idx=0; %Uncomment to test with this mode
+%list_im=dir('Images/*.png'); dat_idx=0; %Uncomment to test with this mode
 
 M=128; %size of input for SfSNet
 for i=1:length(list_im)

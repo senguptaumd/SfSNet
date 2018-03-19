@@ -1,4 +1,4 @@
-@InProceedings{hmrKanazawa17,
+@InProceedings{sfsnetSengupta18,
   title={SfSNet: Learning Shape, Refectance and Illuminance of Faces in the Wild},
   author = {Soumyadip Sengupta and Angjoo Kanazawa and Carlos D. Castillo and David W. Jacobs},
   booktitle={Computer Vision and Pattern Regognition (CVPR)},

@@ -16,4 +16,4 @@ Note: We detect keypoints on the face using <a href="https://arxiv.org/abs/1611.
 ### Dependencies ###
 This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and Matlab interface for Caffe. For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
-Please set the variable PATH_TO_CAFFE_MATLAB, in line 3 of `test_SfSNet.m` as $PATH_TO_CAFFE/matlab (path to matlab folder for the caffe installation)
+Please set the variable `PATH_TO_CAFFE_MATLAB`, in line 3 of `test_SfSNet.m` as `$PATH_TO_CAFFE/matlab` (path to matlab folder for the caffe installation)

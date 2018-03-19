@@ -8,11 +8,12 @@
  - (0) Test script: test_SfSNet.m
  - (1) Test images along with mask: Images_mask
  - (2) Test images without mask: Images
+ 
+Run 'test_SfSNet' on Matlab to run SfSNet on the supplied test images. 
 
 Note: We detect keypoints on the face using <a href="https://arxiv.org/abs/1611.00851">All-in-One Network</a> and compute a mask from it. Unfortunately the code is not distributable. Ideally, you can use any keypoint detector and generate a mask based on the facial contour.
 
 ### Dependencies ###
 This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and Matlab interface for Caffe. For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
-Please set the variable PATH_TO_CAFFE_MATLAB, in line 3 of test_SfSNet.m as $PATH_TO_CAFFE/matlab (path to matlab folder for the caffe installation)
-
+Please set the variable PATH_TO_CAFFE_MATLAB, in line 3 of `test_SfSNet.m` as $PATH_TO_CAFFE/matlab (path to matlab folder for the caffe installation)

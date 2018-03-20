@@ -20,3 +20,14 @@ Please set the variable `PATH_TO_CAFFE_MATLAB`, in line 3 of `test_SfSNet.m` as 
 We detect keypoints on the face using <a href="https://arxiv.org/abs/1611.00851">All-in-One Network</a> and compute a mask from it. Unfortunately the code is not distributable. Ideally, you can use any keypoint detector and generate a mask based on the facial contour.
 
 For the ease of use, we include a matlab function `functions/create_mask_fiducial.m` which computes a mask given keypoints. The keypoint definitions are shown in `functions/facial_landmarks_68markup-768x619.jpg`. [Dlib C++ Library](http://dlib.net/) can be used to detect 68 keypoints based on this definition.
+
+### Citation
+If you use this code for your research, please consider citing:
+```
+@InProceedings{sfsnetSengupta18,
+  title={SfSNet: Learning Shape, Refectance and Illuminance of Faces in the Wild},
+  author = {Soumyadip Sengupta and Angjoo Kanazawa and Carlos D. Castillo and David W. Jacobs},
+  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  year={2018}
+}
+```

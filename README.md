@@ -21,6 +21,16 @@ We detect keypoints on the face using <a href="https://arxiv.org/abs/1611.00851"
 
 For the ease of use, we include a matlab function `functions/create_mask_fiducial.m` which computes a mask given keypoints. The keypoint definitions are shown in `functions/facial_landmarks_68markup-768x619.jpg`. [Dlib C++ Library](http://dlib.net/) can be used to detect 68 keypoints based on this definition.
 
+### Training Code
+We provided neccessary .prototxt training and solver files, along with python loss layers needed to train SfSNet. Please check `SfSNet_train` for more details.
+
+### Training Data
+We provide a link to download 250k synthetic face images with Ground-Truth normal, albedo and lighting at 512x512 resolution. Caution the file size is ~120GB. 
+.[Synthetic Data](https://drive.google.com/file/d/1UQONt9Usk3PKztSIoXeNUEUqD5s6z69e/view?usp=sharing)
+
+For real data, please download aligned and cropped .[CelebA faces](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+
+
 ### Citation
 If you use this code for your research, please consider citing:
 ```

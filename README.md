@@ -25,7 +25,9 @@ For the ease of use, we include a matlab function `functions/create_mask_fiducia
 We provided neccessary .prototxt training and solver files, along with python loss layers needed to train SfSNet. Please check `SfSNet_train` for more details.
 
 ### Training Data
-We provide [250k synthetic face images](https://drive.google.com/file/d/1UQONt9Usk3PKztSIoXeNUEUqD5s6z69e/view?usp=sharing) with Ground-Truth normal, albedo and lighting at 512x512 resolution generated with [3DMM](http://gravis.dmi.unibas.ch/Sigg99.html). Caution the file size is ~120GB. 
+We provide [250k synthetic face images](https://drive.google.com/file/d/1UQONt9Usk3PKztSIoXeNUEUqD5s6z69e/view?usp=sharing) with Ground-Truth normal, albedo and lighting at 512x512 resolution generated with [3DMM](http://gravis.dmi.unibas.ch/Sigg99.html). Caution the file size is ~120GB. This data is provided only for research purposes.
+
+##### Note: Please fill out this [form](https://goo.gl/forms/lLTaT4KYgGQAmBhh2) to request access to the synthetic data.
 
 For real data, please download the aligned and cropped [CelebA face dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 

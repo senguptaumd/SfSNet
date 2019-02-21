@@ -5,14 +5,14 @@
 <img src="https://github.com/senguptaumd/SfSNet/blob/gh-pages/resources/Teaser1.png" width="500px" >
 
 ### Overview
- - (0) Test script: `test_SfSNet.m`
+ - (0) Test script: `test_SfSNet.m`, `test_SfSNet.py`
  - (1) Test images along with mask: Images_mask
  - (2) Test images without mask: Images
  
-Run 'test_SfSNet' on Matlab to run SfSNet on the supplied test images. 
+Run 'test_SfSNet' on Matlab or 'test_SfSNet.py' in Python to run SfSNet on the supplied test images. 
 
 ### Dependencies ###
-This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and Matlab interface for Caffe. For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
+This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and Matlab interface for Caffe or Python interface for Caffe. For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
 Please set the variable `PATH_TO_CAFFE_MATLAB`, in line 3 of `test_SfSNet.m` as `$PATH_TO_CAFFE/matlab` (path to matlab folder for the caffe installation)
 

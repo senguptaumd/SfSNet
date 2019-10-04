@@ -1,6 +1,6 @@
 @InProceedings{sfsnetSengupta18,
-  title={SfSNet: Learning Shape, Refectance and Illuminance of Faces in the Wild},
-  author = {Soumyadip Sengupta and Angjoo Kanazawa and Carlos D. Castillo and David W. Jacobs},
-  booktitle={Computer Vision and Pattern Regognition (CVPR)},
-  year={2018}
+  title={Neural Inverse Rendering of an Indoor Scene From a Single Image},
+  author = {Soumyadip Sengupta and Jinwei Gu and Kihwan Kim and Guilin Liu and David W. Jacobs and Jan Kautz},
+  booktitle={International Conference on Computer Vision (ICCV)},
+  year={2019}
 }
